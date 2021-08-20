@@ -1,30 +1,34 @@
 import React, { useState } from "react";
 import "./works.scss";
-import { PhoneAndroid, ArrowBackIos } from "@material-ui/icons";
+import {
+  PhoneAndroid,
+  ArrowBackIos,
+  LanguageOutlined,
+} from "@material-ui/icons";
 const Works = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const data = [
     {
       id: 1,
-      icon: <PhoneAndroid />,
+      icon: <LanguageOutlined />,
       title: "Web Desing",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Numquam reiciendis quo beatae ipsum, architecto ullam.",
-      img: "assets/webdev.png",
+      desc: "A social Media app based on MERN stack. Code available on github.",
+      img: "assets/social.png",
     },
     {
       id: 2,
-      icon: <PhoneAndroid />,
-      title: "Mobile Desing",
-      desc: " ipsum dolor sit amet consectetur adipisicing elit Numquam reiciendis quo beatae ipsum, architecto ullam.",
-      img: "assets/webdev.png",
+      icon: <LanguageOutlined />,
+      title: "Web Desing",
+      desc: "A Movie streaming app based on MERn stack and firebase for storeage. Code available on github",
+      img: "assets/streamers.png",
     },
     {
       id: 3,
-      icon: <PhoneAndroid />,
-      title: "Desing",
-      desc: "dolor sit amet consectetur adipisicing elit Numquam reiciendis quo beatae ipsum, architecto ullam kuchbhi.",
-      img: "assets/webdev.png",
+      icon: <LanguageOutlined />,
+      title: "Web Desing",
+      desc: "Admin Panel based on React Js. Code available on github",
+      img: "assets/admin.png",
     },
   ];
   // console.log(data);

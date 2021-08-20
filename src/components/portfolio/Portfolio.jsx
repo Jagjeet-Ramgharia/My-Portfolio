@@ -29,10 +29,6 @@ const Portfolio = () => {
       id: "Design",
       title: "Design",
     },
-    {
-      id: "Branding",
-      title: "Branding",
-    },
   ];
 
   useEffect(() => {
@@ -48,9 +44,6 @@ const Portfolio = () => {
         break;
       case "Design":
         setData(designPortfolio);
-        break;
-      case "Branding":
-        setData(brandingPortfolio);
         break;
       default:
         setData(featuredPortfolio);

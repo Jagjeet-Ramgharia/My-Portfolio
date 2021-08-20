@@ -100,10 +100,13 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          height: 100%;
 
           img {
-            width: 400px;
-            transform: rotate(-10deg);
+            height: 90%;
+            width: 500px;
+            transform: rotate(-7deg);
+            filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 1));
           }
         }
       }
