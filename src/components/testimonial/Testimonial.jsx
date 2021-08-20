@@ -17,7 +17,7 @@ const Testimonial = () => {
       icon: <PhoneAndroid />,
       name: "Jagjeet Ramgharia",
       title: "React Js Developer",
-      desc: "I am a web developer with enthusiasm and focused on  frontend developer. I am always willing to work outside my comfort zone and give my best. I started out as a digital marketer and slowly realized that i have a passion for building front-end interfaces of supreme quality. I love javascript ecosystem.",
+      desc: "I am a web developer with enthusiasm and focused on  frontend developer. I am always willing to work outside my comfort zone and give my best. I have a passion for building front-end interfaces of supreme quality. I love javascript ecosystem.",
       img: "assets/1.png",
       featured: true,
     },
