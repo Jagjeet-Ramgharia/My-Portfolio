@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.scss";
 import { GitHub, LinkedIn, MailOutline } from "@material-ui/icons";
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-  };
-
   return (
     <div className="contact" id="contact">
       <div className="left">

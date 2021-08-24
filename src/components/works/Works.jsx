@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./works.scss";
-import {
-  PhoneAndroid,
-  ArrowBackIos,
-  LanguageOutlined,
-} from "@material-ui/icons";
+import { ArrowBackIos, LanguageOutlined } from "@material-ui/icons";
 const Works = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -20,7 +16,7 @@ const Works = () => {
       id: 2,
       icon: <LanguageOutlined />,
       title: "Web Desing",
-      desc: "A Movie streaming app based on MERn stack and firebase for storeage. Code available on github",
+      desc: "A Movie streaming app based on MERN stack and firebase for storeage. Code on github",
       img: "assets/streamers.png",
     },
     {
@@ -31,14 +27,12 @@ const Works = () => {
       img: "assets/admin.png",
     },
   ];
-  // console.log(data);
 
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
-  console.log(currentSlide);
   return (
     <div className="works" id="works">
       <div
@@ -49,13 +43,12 @@ const Works = () => {
           return (
             <>
               <div className="container">
-                <div className="item">
+                <div key={item.id} className="item">
                   <div className="left">
                     <div className="leftContainer">
                       <div className="iconContainer">{item.icon}</div>
                       <h2>{item?.title}</h2>
                       <p>{item?.desc}</p>
-                      <span>Projects</span>
                     </div>
                   </div>
                   <div className="right">

@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .works {
-  background-color: rgb(230, 97, 124);
+  background-color: lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -80,12 +80,23 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              @include mobile {
+                background-color: whitesmoke;
+                width: 30px;
+                height: 30px;
+              }
             }
             h2 {
               font-size: 20px;
+              @include mobile {
+                font-size: 12px;
+              }
             }
             p {
               font-size: 13px;
+              @include mobile {
+                font-size: 11px;
+              }
             }
             span {
               font-size: 12px;

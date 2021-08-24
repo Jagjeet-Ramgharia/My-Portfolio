@@ -6,7 +6,6 @@ import {
   mobilePortfolio,
   webPortfolio,
   designPortfolio,
-  brandingPortfolio,
 } from "../../Data";
 
 const Portfolio = () => {
@@ -67,7 +66,7 @@ const Portfolio = () => {
         })}
       </ul>
       <div className="container">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
             <>
               <div className="item">

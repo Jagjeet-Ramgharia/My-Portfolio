@@ -1,6 +1,6 @@
 import React from "react";
 import "./topbar.scss";
-import { Person, MailOutline, GitHub } from "@material-ui/icons";
+import { Person, MailOutline } from "@material-ui/icons";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
