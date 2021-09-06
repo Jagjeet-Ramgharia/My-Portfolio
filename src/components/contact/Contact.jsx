@@ -1,8 +1,28 @@
 import React from "react";
 import "./contact.scss";
-import { GitHub, LinkedIn, MailOutline } from "@material-ui/icons";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5som6sb",
+        "template_rr3diyo",
+        e.target,
+        "user_LAu1aY5XCDRpSbNoVghVf"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <div className="contact" id="contact">
       <div className="left">
@@ -10,27 +30,13 @@ const Contact = () => {
       </div>
       <div className="right">
         <h2>Contact.</h2>
-
-        <div className="item">
-          <LinkedIn className="icon" />
-          <a
-            className="link"
-            href="https://www.linkedin.com/in/jagjeet-singh-84a60a171/"
-            target="_blank"
-          >
-            Jagjeet Singh
-          </a>
-        </div>
-        <div className="item">
-          <GitHub className="icon" />
-          <a className="link" href="https://github.com/Jagjeet-Ramgharia">
-            Jagjeet Ramgharia
-          </a>
-        </div>
-        <div className="item">
-          <MailOutline className="icon" />
-          <span className="link">Ramghariajagjeet4281@gmail.com</span>
-        </div>
+        <form onSubmit={sendEmail}>
+          <input type="text" placeholder="Name" name="name" />
+          <input type="email" placeholder="Email" name="email" />
+          <input type="text" placeholder="Subject" name="subject" />
+          <textarea placeholder="Message" name="message" />
+          <button type="submit">Send</button>
+        </form>
       </div>
       <span className="footer">Jagjeet Ramgharia</span>
     </div>

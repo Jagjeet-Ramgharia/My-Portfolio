@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfoliolist.scss";
 
-const PortfolioList = ({ id, title, active, setSelected, key }) => {
+const PortfolioList = ({ id, title, active, setSelected }) => {
   return (
     <li
       key={id}

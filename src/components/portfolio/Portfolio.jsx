@@ -60,6 +60,7 @@ const Portfolio = () => {
                 active={selected === item.id}
                 setSelected={setSelected}
                 id={item.id}
+                key={item.id}
               />
             </>
           );
