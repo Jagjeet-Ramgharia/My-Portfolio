@@ -68,8 +68,8 @@
     }
 
     form {
-      height: 70%;
-      width: 70%;
+      height: 80%;
+      width: 80%;
       padding: 10px;
       display: flex;
       flex-direction: column;
@@ -86,8 +86,7 @@
         border-radius: 10px;
 
         @include mobile {
-          width: 200px;
-          height: 20px;
+          padding: 10px;
           margin-bottom: 10px;
         }
       }
@@ -102,7 +101,7 @@
         // margin-bottom: 10px;
 
         @include mobile {
-          width: 200px;
+          width: 300px;
           height: 100px;
           margin-bottom: 10px;
         }
@@ -112,11 +111,13 @@
         border: none;
         outline: none;
         padding: 10px;
-        width: 60%;
+        width: 100%;
         background-color: crimson;
         color: whitesmoke;
         border-radius: 10px;
         cursor: pointer;
+        font-weight: 500;
+        text-transform: uppercase;
       }
 
       span {

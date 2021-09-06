@@ -31,9 +31,24 @@ const Contact = () => {
       <div className="right">
         <h2>Contact.</h2>
         <form onSubmit={sendEmail}>
-          <input type="text" placeholder="Name" name="name" />
-          <input type="email" placeholder="Email" name="email" />
-          <input type="text" placeholder="Subject" name="subject" />
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            autoComplete="off"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            autoComplete="off"
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            autoComplete="off"
+          />
           <textarea placeholder="Message" name="message" />
           <button type="submit">Send</button>
         </form>
