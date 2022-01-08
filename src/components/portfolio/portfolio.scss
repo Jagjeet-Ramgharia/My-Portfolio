@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: 100vh;
   h1 {
-    font-size: 40px;
+    font-size: 30px;
+    padding-bottom: 30px;
 
     @include mobile {
       font-size: 20px;
@@ -25,37 +26,95 @@
     }
   }
   .container {
-    width: 80%;
+    width: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    // background-color: rgb(245, 238, 238);
+    border-radius: 10px;
+    padding: 30px 10px;
+    // margin: 50px 0;
 
     @include mobile {
       width: 100%;
     }
 
     .item {
-      width: 220px;
-      height: 150px;
-      border-radius: 10px;
-      border: 1px solid lightgrey;
+      width: 80%;
+      border-radius: 6px;
+      background-color: rgb(255, 208, 215);
       margin: 10px 20px;
       display: flex;
       align-items: center;
-      justify-content: center;
       color: white;
-      position: relative;
+      padding: 40px 20px;
+      transition: all 0.6s ease-in-out;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      -webkit-box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+      box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+      &:hover {
+        -webkit-box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+        transform: scaleX(1);
+      }
 
       @include mobile {
         width: 130px;
         height: 100px;
       }
-
+      .project-image {
+        object-fit: cover;
+        flex: 1;
+        opacity: 0.8;
+        border-radius: 20px;
+        -webkit-box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 7px 5px -3px rgba(0, 0, 0, 0.75);
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          -webkit-box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 8px 20px -4px rgba(0, 0, 0, 0.75);
+        }
+      }
+      .info-container {
+        flex: 1;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 10px;
+        .ptitle {
+          color: rgb(155, 143, 143);
+          margin-bottom: 10px;
+        }
+        .btn {
+          border: 1px solid lightgrey;
+          outline: none;
+          padding: 15px 30px;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: 600;
+          background-color: rgb(51, 49, 49);
+          color: white;
+          border-radius: 10px;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            background-color: whitesmoke;
+            color: rgb(51, 49, 49);
+          }
+        }
+      }
       h3 {
-        position: absolute;
         font-size: 20px;
         cursor: pointer;
+        color: rgb(155, 143, 143);
 
         @include mobile {
           font-size: 12px;
@@ -68,15 +127,10 @@
         object-fit: cover;
         z-index: 1;
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.7s ease-in-out;
         outline: none;
       }
       &:hover {
-        background-color: $mainColor;
-        img {
-          opacity: 0.1;
-          z-index: 0;
-        }
       }
     }
   }

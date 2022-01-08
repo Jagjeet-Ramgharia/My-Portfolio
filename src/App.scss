@@ -1,6 +1,16 @@
 .App {
   height: 100vh;
 
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+  }
+
   .sections {
     width: 100%;
     height: calc(100vh - 70px);
@@ -9,6 +19,7 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    background: rgb(252, 241, 241);
     &::-webkit-scrollbar {
       display: none;
     }

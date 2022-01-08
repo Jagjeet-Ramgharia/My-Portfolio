@@ -28,11 +28,7 @@ const Testimonial = () => {
                 key={index}
                 className={item.featured ? "card featured" : "card"}
               >
-                <div className="top">
-                  {/* <ChevronRightIcon className="left" /> */}
-                  <img className="user" src={item.img} alt="" />
-                  {/* <img className="right" src="" alt="" /> */}
-                </div>
+                <div className="top"></div>
                 <div className="center">
                   {item.desc}
                   <span>

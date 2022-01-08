@@ -1,0 +1,95 @@
+.conatiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 229, 229);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.text {
+  font-size: 40px;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.desc {
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+.block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+}
+
+.block > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.animated_div {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* -webkit-box-shadow: 0px 0px 105px 45px rgba(237, 66, 66, 0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(237, 66, 66, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(237, 66, 66, 0.9); */
+  border-radius: 20px;
+}
+
+.animated_div .neon {
+  animation: neonAnim 2s alternate-reverse infinite;
+  color: #efd0d9;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  z-index: 9999;
+}
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 17px rgba(239, 208, 217, 0.7),
+      0 0 47px rgba(239, 208, 217, 0.7), 0 0 107px rgba(239, 208, 217, 0.7);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(239, 208, 217, 0.7),
+      0 0 27px rgba(239, 208, 217, 0.7), 0 0 67px rgba(239, 208, 217, 0.7);
+  }
+}
+.animated_div .neon_sub {
+  animation: neonAnim 2s alternate-reverse infinite;
+  color: #efd0d9;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 17px rgba(239, 208, 217, 0.7),
+      0 0 47px rgba(239, 208, 217, 0.7), 0 0 107px rgba(239, 208, 217, 0.7);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(239, 208, 217, 0.7),
+      0 0 27px rgba(239, 208, 217, 0.7), 0 0 67px rgba(239, 208, 217, 0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    height: 30px;
+    width: 30px;
+  }
+}
