@@ -2,9 +2,17 @@ import React, { useEffect, useRef } from "react";
 import "./intro.scss";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { init } from "ityped";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Intro = () => {
   const textRef = useRef();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
 
   useEffect(() => {
     init(textRef.current, {
@@ -21,7 +29,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro" id="intro">
+    <div className="intro" id="intro" data-aos="fade">
       <div className="left">
         <div className="imgContainer">
           <img src="assets/1.png" alt="" />
