@@ -55,35 +55,18 @@
 
 .animated_div .neon {
   animation: neonAnim 2s alternate-reverse infinite;
-  color: #efd0d9;
-  font-size: 60px;
-  font-family: "Roboto", sans-serif;
-  z-index: 9999;
+  color: #007bff;
+  font-family: Cursive;
+  font-size: 72px;
 }
 @keyframes neonAnim {
   from {
-    text-shadow: 0 0 17px rgba(239, 208, 217, 0.7),
-      0 0 47px rgba(239, 208, 217, 0.7), 0 0 107px rgba(239, 208, 217, 0.7);
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.7),
+      0 0 40px rgba(0, 123, 255, 0.7), 0 0 100px rgba(0, 123, 255, 0.7);
   }
   to {
-    text-shadow: 0 0 12px rgba(239, 208, 217, 0.7),
-      0 0 27px rgba(239, 208, 217, 0.7), 0 0 67px rgba(239, 208, 217, 0.7);
-  }
-}
-.animated_div .neon_sub {
-  animation: neonAnim 2s alternate-reverse infinite;
-  color: #efd0d9;
-  font-size: 40px;
-  font-family: "Roboto", sans-serif;
-}
-@keyframes neonAnim {
-  from {
-    text-shadow: 0 0 17px rgba(239, 208, 217, 0.7),
-      0 0 47px rgba(239, 208, 217, 0.7), 0 0 107px rgba(239, 208, 217, 0.7);
-  }
-  to {
-    text-shadow: 0 0 12px rgba(239, 208, 217, 0.7),
-      0 0 27px rgba(239, 208, 217, 0.7), 0 0 67px rgba(239, 208, 217, 0.7);
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.7),
+      0 0 60px rgba(0, 123, 255, 0.7);
   }
 }
 

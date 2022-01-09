@@ -19,7 +19,7 @@
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     list-style: none;
     font-size: 30px;
     font-weight: 300;
@@ -27,16 +27,100 @@
     width: 70%;
 
     li {
+      text-align: center;
+      padding: 5px;
       margin-bottom: 20px;
+      position: relative;
+      box-shadow: 1px 0px 8px 1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 1px 0px 8px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 0px 8px 1px rgba(0, 0, 0, 0.75);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 50%;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      span:nth-child(1) {
+        position: absolute;
+        height: 1px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(to right, #0c002b, #1779ff);
+        animation: anim1 1s linear infinite;
+
+        @keyframes anim1 {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      }
+
+      span:nth-child(2) {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        width: 1px;
+        background: linear-gradient(to bottom, #0c002b, #1779ff);
+        animation: anim2 1s linear infinite;
+        @keyframes anim2 {
+          0% {
+            transform: translateY(-100%);
+          }
+          100% {
+            transform: translateY(100%);
+          }
+        }
+      }
+
+      span:nth-child(3) {
+        position: absolute;
+        height: 1px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to left, #0c002b, #1779ff);
+        animation: anim3 1s linear infinite;
+        @keyframes anim3 {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
+
+      span:nth-child(4) {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        background: linear-gradient(to top, #0c002b, #1779ff);
+        animation: anim4 1s linear infinite;
+        @keyframes anim4 {
+          0% {
+            transform: translateY(100%);
+          }
+          100% {
+            transform: translateY(-100%);
+          }
+        }
+      }
 
       a {
         text-decoration: none;
         font-size: inherit;
         color: inherit;
-      }
-
-      &:hover {
-        font-weight: 500;
       }
     }
   }

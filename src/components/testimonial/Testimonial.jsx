@@ -9,7 +9,7 @@ const Testimonial = () => {
       icon: <PhoneAndroid />,
       name: "Jagjeet Ramgharia",
       title: "React Js Developer",
-      desc: "I am a web developer with enthusiasm and focused on  frontend developer. I am always willing to work outside my comfort zone and give my best. I started out as a digital marketer and slowly realized that i have a passion for building front-end interfaces of supreme quality. I love javascript ecosystem. I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally. .",
+      desc: "I am a web developer with enthusiasm and focused on frontend developement. I am always willing to work outside my comfort zone and give my best. I started out as a digital marketer and slowly realized that i have a passion for building front-end interfaces of supreme quality. I love javascript ecosystem. I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally.My hobbies are hiking and book reading. I love to play cricket ",
       img: "assets/1.png",
       Hobbies: "Hiking Reading Sports",
       location: "Ludhiana Punjab India",
@@ -29,18 +29,10 @@ const Testimonial = () => {
                 className={item.featured ? "card featured" : "card"}
               >
                 <div className="top"></div>
-                <div className="center">
-                  {item.desc}
-                  <span>
-                    <b>Hobbies</b> : {item.Hobbies}
-                  </span>
-                  <span>
-                    <LocationOnIcon /> : {item.location}
-                  </span>
-                </div>
+                <div className="center">{item.desc}</div>
                 <div className="bottom">
-                  <h3>{item.name}</h3>
-                  <h4>{item.title}</h4>
+                  {/* <h3>{item.name}</h3> */}
+                  {/* <h4>{item.title}</h4> */}
                 </div>
               </div>
             </>

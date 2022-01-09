@@ -20,12 +20,7 @@ const Intro = () => {
       backSpeed: 80,
       startDelay: 500,
       backDelay: 1000,
-      strings: [
-        "Developer",
-        "Designer",
-        "MERN Stack Developer",
-        "PERN Stack Developer",
-      ],
+      strings: ["Developer", "Designer", "Freelancer"],
     });
   }, []);
   return (
